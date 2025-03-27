@@ -1,0 +1,8 @@
+<!-- res/drawable/border.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- 배경색 설정 -->
+    <stroke
+        android:color="#16B9FF"
+        android:width="2dp" />   <!-- 경계선 두께 -->
+    <corners android:radius="5dp" />  <!-- 모서리 둥글게 -->
+</shape>

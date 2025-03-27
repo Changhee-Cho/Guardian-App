@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#16B9FF"
+        android:orientation="horizontal" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Guardian"
+                android:textColor="#FFFFFF"
+                android:textColorLink="#907676"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.073"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="보안 메모 App, Guardian!\n최초 실행시 비밀번호 등록이 필요합니다."
+                android:textColor="#FFFFFF"
+                android:textColorLink="#907676"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.084"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.95" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">  <!-- 여기에서 수평 가운데 정렬을 설정 -->
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PIN 번호 입력: "
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextNumberPassword"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberPassword"
+                    android:text=""
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">  <!-- 여기에서 수평 가운데 정렬을 설정 -->
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PIN 번호 확인: "
+                    android:textSize="15dp"
+                    android:textStyle="bold"  />
+
+                <EditText
+                    android:id="@+id/editTextReNumberPassword"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberPassword"
+                    android:text=""
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="등록하기"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
